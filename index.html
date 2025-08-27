@@ -28,12 +28,17 @@
             </h1>
           </div>
           <div class="flex gap-6">
-            <button class="h-[50px] w-[150px] rounded-full text-[Inter] text-[1.25rem] bg-[#41FF6B1A]"> 0 <i
-                class="fa-solid fa-heart text-red-600 ml-2"></i></button>
-            <button class="h-[50px] w-[150px] rounded-full text-[Inter] text-[1.25rem] bg-[#41FF6B1A]"> 100 <i
-                class="fa-solid fa-heart ml-2"></i></button>
-            <button
-              class="h-[50px] w-[150px] rounded-full text-[Inter] text-[1.25rem] bg-[#00A63E] text-white ">Copy</button>
+            <div
+              class="flex justify-center gap-2 items-center  bg-[#41FF6B1A] h-[50px] w-[100px] rounded-full text-[1.25rem]">
+              <button>0</button>
+              <img src="./assets/heart.png" alt="" class="h-5">
+            </div>
+            <div
+              class="flex justify-center gap-2 items-center  bg-[#41FF6B1A] h-[50px] w-[100px] rounded-full text-[1.25rem]">
+              <button> 100 </button>
+              <img src="./assets/coin.png" alt="" class="h-5">
+            </div>
+            <button class="h-[50px] w-[100px] rounded-full text-[1.25rem] bg-[#00A63E] text-white">Copy</button>
           </div>
         </div>
         <div>
@@ -50,7 +55,8 @@
         <h1
           class="flex justify-center text-[Hind Madurai] md:text-[2.5rem] text-[2rem] font-bold text-[#fff] mt-5 mb-2">
           Emergency Service Directory</h1>
-        <p class="md:flex md:justify-center text-[Hind Madurai] md:text-[1.25rem] font-semibold text-[#fff] md:w-full ">
+        <p
+          class="md:flex md:justify-center md:text-center sm:text-center text-[Hind Madurai] md:text-[1.25rem] font-semibold text-[#fff] md:w-full ">
           Government Emergency Services at
           Your
           Fingertip – A Project by Government of the People’s Republic of
@@ -65,19 +71,20 @@
         <!-- frist card -->
         <div class="grid md:grid-cols-3 grid-cols-1 gap-3">
           <div class="card rounded-lg shadow-lg p-3">
-           <div class="flex justify-between items-center">
-             <img src="./assets/emergency.png" alt="" class="bg-[#FFE3E2] p-3 rounded-lg h-[80px]">
-             <i class="fa-regular fa-heart"></i>
-           </div>
+            <div class="flex justify-between items-center">
+              <img src="./assets/emergency.png" alt="" class="bg-[#FFE3E2] p-3 rounded-lg h-[80px]">
+              <i class="fa-regular fa-heart"></i>
+            </div>
             <h1 class="text-[Hind Madurai] text-[1.25rem] font-bold mt-5">National Emergency Number</h1>
             <p class="text-[Roboto] text-[1.25rem] text-[#9b9b9b]">National Emergency</p>
             <h2 class="text-[Roboto] text-[1.25rem] font-bold mt-5">999</h2>
-            <button class="h-[40px] w-[100px] rounded-full text-[#5c5c5c] text-[1.25rem] bg-[#f2f2f2] mt-2 mb-5 ">All</button>
+            <button
+              class="h-[40px] w-[100px] rounded-full text-[#5c5c5c] text-[1.25rem] bg-[#f2f2f2] mt-2 mb-5 ">All</button>
             <div class="flex items-center gap-5 mt-2">
               <button
                 class="h-[50px] w-[45%] rounded-lg text-[Inter] text-[1.25rem] bg-[#41FF6B1A] border-1 border-[#D4D6D5] flex gap-2 items-center justify-center"><i
                   class="fa-solid fa-copy "></i>Copy</button>
-              <button
+              <button id="call_btn"
                 class="h-[50px] w-[45%] rounded-lg text-[Inter] text-[1.25rem] bg-[#00A63E] flex gap-2 items-center justify-center text-[#fff]"><i
                   class="fa-solid fa-phone text-[#fff]"></i>Call</button>
             </div>
@@ -90,7 +97,8 @@
             <h1 class="text-[Hind Madurai] text-[1.25rem] font-bold mt-5">Police Helpline Number</h1>
             <p class="text-[Roboto] text-[1.25rem] text-[#9b9b9b]">Police</p>
             <h2 class="text-[Roboto] text-[1.25rem] font-bold mt-5">999</h2>
-            <button class="h-[40px] w-[100px] rounded-full text-[Inter] text-[1.25rem] bg-[#f2f2f2] mt-2 text-[#5c5c5c] mb-5">Police</button>
+            <button
+              class="h-[40px] w-[100px] rounded-full text-[Inter] text-[1.25rem] bg-[#f2f2f2] mt-2 text-[#5c5c5c] mb-5">Police</button>
             <div class="flex items-center gap-5 mt-2">
               <button
                 class="h-[50px] w-[45%] rounded-lg text-[Inter] text-[1.25rem] bg-[#41FF6B1A] border-1 border-[#D4D6D5] flex gap-2 items-center justify-center"><i
@@ -108,7 +116,8 @@
             <h1 class="text-[Hind Madurai] text-[1.25rem] font-bold mt-5">Fire Service Number</h1>
             <p class="text-[Roboto] text-[1.25rem] text-[#9b9b9b]">Fire Service</p>
             <h2 class="text-[Roboto] text-[1.25rem] font-bold mt-5">999</h2>
-            <button class="h-[40px] w-[100px] rounded-full text-[1.25rem] text-[#5c5c5c] bg-[#f2f2f2] mt-2 mb-5">Fire</button>
+            <button
+              class="h-[40px] w-[100px] rounded-full text-[1.25rem] text-[#5c5c5c] bg-[#f2f2f2] mt-2 mb-5">Fire</button>
             <div class="flex items-center gap-5 mt-2">
               <button
                 class="h-[50px] w-[45%] rounded-lg text-[Inter] text-[1.25rem] bg-[#41FF6B1A] border-1 border-[#D4D6D5] flex gap-2 items-center justify-center"><i
@@ -150,7 +159,8 @@
             <h1 class="text-[Hind Madurai] text-[1.25rem] font-bold mt-5">Women & Child Helpline</h1>
             <p class="text-[Roboto] text-[1.25rem] text-[#9b9b9b]">Women & Child Helpline</p>
             <h2 class="text-[Roboto] text-[1.25rem] font-bold mt-5">109</h2>
-            <button class="h-[40px] w-[100px] rounded-full text-[#5c5c5c] text-[1.25rem] bg-[#f2f2f2] mt-2 mb-5">Help</button>
+            <button
+              class="h-[40px] w-[100px] rounded-full text-[#5c5c5c] text-[1.25rem] bg-[#f2f2f2] mt-2 mb-5">Help</button>
             <div class="flex items-center gap-5 mt-2">
               <button
                 class="h-[50px] w-[45%] rounded-lg text-[Inter] text-[1.25rem] bg-[#41FF6B1A] border-1 border-[#D4D6D5] flex gap-2 items-center justify-center"><i
@@ -168,7 +178,8 @@
             <h1 class="text-[Hind Madurai] text-[1.25rem] font-bold mt-5">Anti-Corruption Helpline</h1>
             <p class="text-[Roboto] text-[1.25rem] text-[#9b9b9b]">Anti-Corruption</p>
             <h2 class="text-[Roboto] text-[1.25rem] font-bold mt-5">106</h2>
-            <button class="h-[40px] w-[100px] rounded-full text-[#5c5c5c] text-[1.25rem] bg-[#f2f2f2] mt-2 mb-5">Govt.</button>
+            <button
+              class="h-[40px] w-[100px] rounded-full text-[#5c5c5c] text-[1.25rem] bg-[#f2f2f2] mt-2 mb-5">Govt.</button>
             <div class="flex items-center gap-5 mt-2">
               <button
                 class="h-[50px] w-[45%] rounded-lg text-[Inter] text-[1.25rem] bg-[#41FF6B1A] border-1 border-[#D4D6D5] flex gap-2 items-center justify-center"><i
@@ -210,7 +221,8 @@
             <h1 class="text-[Hind Madurai] text-[1.25rem] font-bold mt-5">Brac Helpline</h1>
             <p class="text-[Roboto] text-[1.25rem] text-[#9b9b9b]">Brac</p>
             <h2 class="text-[Roboto] text-[1.25rem] font-bold mt-5">16445</h2>
-            <button class="h-[40px] w-[100px] rounded-full text-[#5c5c5c] text-[1.25rem] bg-[#f2f2f2] mt-2 mb-5">NGO</button>
+            <button
+              class="h-[40px] w-[100px] rounded-full text-[#5c5c5c] text-[1.25rem] bg-[#f2f2f2] mt-2 mb-5">NGO</button>
             <div class="flex items-center gap-5 mt-2">
               <button
                 class="h-[50px] w-[45%] rounded-lg text-[Inter] text-[1.25rem] bg-[#41FF6B1A] border-1 border-[#D4D6D5] flex gap-2 items-center justify-center"><i
@@ -243,8 +255,26 @@
 
         </div>
       </section>
-      <aside id="card_box" class="bg-white col-span-3">
-        <h1>Card</h1>
+      <aside id="card_box" class="bg-white col-span-3 rounded-lg">
+        <div class="flex justify-between items-center p-2">
+          <div class="flex items-center">
+            <i class="fa-regular fa-clock text-[#9b9b9b]"></i>
+            <h2 class="text-[Roboto] text-[1.25rem] font-semibold ml-2">Call Distory</h2>
+          </div>
+          <div>
+            <button class="h-[50px] w-[100px] rounded-full text-[1.25rem] bg-[#00A63E] text-white">Clear</button>
+          </div>
+        </div>
+        <div class="card_box bg-slate-300 mt-10 p-5">
+          <h2>Call</h2>
+          <div id="cart_container">
+
+          </div>
+          <div class="">
+            <h2>Total price<span>0</span> tk</h2>
+            <h2>Quantiry<span>0</span>tk</h2>
+          </div>
+        </div>
       </aside>
     </section>
 
