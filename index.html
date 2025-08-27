@@ -30,13 +30,13 @@
           <div class="flex gap-6">
             <div
               class="flex justify-center gap-2 items-center  bg-[#41FF6B1A] h-[50px] w-[100px] rounded-full text-[1.25rem]">
-              <button>0</button>
+              <button id="heart_btn">0</button>
               <img src="./assets/heart.png" alt="" class="h-5">
             </div>
             <div
               class="flex justify-center gap-2 items-center  bg-[#41FF6B1A] h-[50px] w-[100px] rounded-full text-[1.25rem]">
-              <button> 100 </button>
-              <img src="./assets/coin.png" alt="" class="h-5">
+              <button id="coin_btn"> 100 </button>
+              <img src="./assets/coin.png" alt="" class="h-5" id="coin_icon">
             </div>
             <button class="h-[50px] w-[100px] rounded-full text-[1.25rem] bg-[#00A63E] text-white">Copy</button>
           </div>
@@ -73,26 +73,28 @@
           <div class="card rounded-lg shadow-lg p-3">
             <div class="flex justify-between items-center">
               <img src="./assets/emergency.png" alt="" class="bg-[#FFE3E2] p-3 rounded-lg h-[80px]">
-              <i class="fa-regular fa-heart"></i>
+              <i class="fa-regular fa-heart heart_icon"></i>
             </div>
-            <h1 class="text-[Hind Madurai] text-[1.25rem] font-bold mt-5">National Emergency Number</h1>
+            <h1 id="service_title" class="text-[Hind Madurai] text-[1.25rem] font-bold mt-5">National Emergency Number
+            </h1>
             <p class="text-[Roboto] text-[1.25rem] text-[#9b9b9b]">National Emergency</p>
-            <h2 class="text-[Roboto] text-[1.25rem] font-bold mt-5">999</h2>
+            <h2 id="hot_line_number" class="text-[Roboto] text-[1.25rem] font-bold mt-5">999</h2>
             <button
               class="h-[40px] w-[100px] rounded-full text-[#5c5c5c] text-[1.25rem] bg-[#f2f2f2] mt-2 mb-5 ">All</button>
             <div class="flex items-center gap-5 mt-2">
-              <button
+              <button id="copyBtn"
                 class="h-[50px] w-[45%] rounded-lg text-[Inter] text-[1.25rem] bg-[#41FF6B1A] border-1 border-[#D4D6D5] flex gap-2 items-center justify-center"><i
                   class="fa-solid fa-copy "></i>Copy</button>
-              <button id="call_btn"
-                class="h-[50px] w-[45%] rounded-lg text-[Inter] text-[1.25rem] bg-[#00A63E] flex gap-2 items-center justify-center text-[#fff]"><i
-                  class="fa-solid fa-phone text-[#fff]"></i>Call</button>
+              <button
+                class=" call_butoon h-[50px] w-[45%] rounded-lg text-[Inter] text-[1.25rem] bg-[#00A63E] flex gap-2 items-center justify-center text-[#fff]">
+                <i class="fa-solid fa-phone text-[#fff]"></i>Call</button>
             </div>
           </div>
+          <!-- card 2 -->
           <div class="card rounded-lg shadow-lg p-3">
             <div class="flex justify-between items-center">
               <img src="./assets/police.png" alt="" class="bg-[#41FF6B1A] p-3 rounded-lg h-[80px]">
-              <i class="fa-regular fa-heart"></i>
+              <i class="fa-regular fa-heart heart_icon"></i>
             </div>
             <h1 class="text-[Hind Madurai] text-[1.25rem] font-bold mt-5">Police Helpline Number</h1>
             <p class="text-[Roboto] text-[1.25rem] text-[#9b9b9b]">Police</p>
@@ -104,14 +106,15 @@
                 class="h-[50px] w-[45%] rounded-lg text-[Inter] text-[1.25rem] bg-[#41FF6B1A] border-1 border-[#D4D6D5] flex gap-2 items-center justify-center"><i
                   class="fa-solid fa-copy "></i>Copy</button>
               <button
-                class="h-[50px] w-[45%] rounded-lg text-[Inter] text-[1.25rem] bg-[#00A63E] flex gap-2 items-center justify-center text-[#fff]"><i
+                class="call_butoon h-[50px] w-[45%] rounded-lg text-[Inter] text-[1.25rem] bg-[#00A63E] flex gap-2 items-center justify-center text-[#fff]"><i
                   class="fa-solid fa-phone text-[#fff]"></i>Call</button>
             </div>
           </div>
+          <!-- card 3 -->
           <div class="card rounded-lg shadow-lg p-3">
             <div class="flex justify-between items-center">
               <img src="./assets/ambulance.png" alt="" class="bg-[#FFE3E2] p-3 rounded-lg h-[80px]">
-              <i class="fa-regular fa-heart"></i>
+              <i class="fa-regular fa-heart heart_icon"></i>
             </div>
             <h1 class="text-[Hind Madurai] text-[1.25rem] font-bold mt-5">Fire Service Number</h1>
             <p class="text-[Roboto] text-[1.25rem] text-[#9b9b9b]">Fire Service</p>
@@ -123,8 +126,8 @@
                 class="h-[50px] w-[45%] rounded-lg text-[Inter] text-[1.25rem] bg-[#41FF6B1A] border-1 border-[#D4D6D5] flex gap-2 items-center justify-center"><i
                   class="fa-solid fa-copy "></i>Copy</button>
               <button
-                class="h-[50px] w-[45%] rounded-lg text-[Inter] text-[1.25rem] bg-[#00A63E] flex gap-2 items-center justify-center text-[#fff]"><i
-                  class="fa-solid fa-phone text-[#fff]"></i>Call</button>
+                class="call_butoon h-[50px] w-[45%] rounded-lg text-[Inter] text-[1.25rem] bg-[#00A63E] flex gap-2 items-center justify-center text-[#fff]">
+                <i class="fa-solid fa-phone text-[#fff]"></i>Call</button>
             </div>
           </div>
 
@@ -132,10 +135,11 @@
         </div>
         <!-- second card -->
         <div class="grid md:grid-cols-3 grid-cols-1 gap-3 mt-20">
+          <!-- card 1 -->
           <div class="card rounded-lg shadow-lg p-3">
             <div class="flex justify-between items-center">
               <img src="./assets/ambulance.png" alt="" class="bg-[#FFE3E2] p-3 rounded-lg h-[80px]">
-              <i class="fa-regular fa-heart"></i>
+              <i class="fa-regular fa-heart heart_icon"></i>
             </div>
             <h1 class="text-[Hind Madurai] text-[1.25rem] font-bold mt-5">Ambulance Service</h1>
             <p class="text-[Roboto] text-[1.25rem] text-[#5c5c5c]">Ambulance</p>
@@ -147,14 +151,15 @@
                 class="h-[50px] w-[45%] rounded-lg text-[Inter] text-[1.25rem] bg-[#41FF6B1A] border-1 border-[#D4D6D5] flex gap-2 items-center justify-center"><i
                   class="fa-solid fa-copy "></i>Copy</button>
               <button
-                class="h-[50px] w-[45%] rounded-lg text-[Inter] text-[1.25rem] bg-[#00A63E] flex gap-2 items-center justify-center text-[#fff]"><i
-                  class="fa-solid fa-phone text-[#fff]"></i>Call</button>
+                class="call_butoon h-[50px] w-[45%] rounded-lg text-[Inter] text-[1.25rem] bg-[#00A63E] flex gap-2 items-center justify-center text-[#fff]">
+                <i class="fa-solid fa-phone text-[#fff]"></i>Call</button>
             </div>
           </div>
+          <!-- card 2 -->
           <div class="card rounded-lg shadow-lg p-3">
             <div class="flex justify-between items-center">
               <img src="./assets/emergency.png" alt="" class="bg-[#41FF6B1A] p-3 rounded-lg h-[80px]">
-              <i class="fa-regular fa-heart"></i>
+              <i class="fa-regular fa-heart heart_icon"></i>
             </div>
             <h1 class="text-[Hind Madurai] text-[1.25rem] font-bold mt-5">Women & Child Helpline</h1>
             <p class="text-[Roboto] text-[1.25rem] text-[#9b9b9b]">Women & Child Helpline</p>
@@ -166,14 +171,15 @@
                 class="h-[50px] w-[45%] rounded-lg text-[Inter] text-[1.25rem] bg-[#41FF6B1A] border-1 border-[#D4D6D5] flex gap-2 items-center justify-center"><i
                   class="fa-solid fa-copy "></i>Copy</button>
               <button
-                class="h-[50px] w-[45%] rounded-lg text-[Inter] text-[1.25rem] bg-[#00A63E] flex gap-2 items-center justify-center text-[#fff]"><i
-                  class="fa-solid fa-phone text-[#fff]"></i>Call</button>
+                class="call_butoon h-[50px] w-[45%] rounded-lg text-[Inter] text-[1.25rem] bg-[#00A63E] flex gap-2 items-center justify-center text-[#fff]">
+                <i class="fa-solid fa-phone text-[#fff]"></i>Call</button>
             </div>
           </div>
+          <!-- card 3 -->
           <div class="card rounded-lg shadow-lg p-3">
             <div class="flex justify-between items-center">
               <img src="./assets/emergency.png" alt="" class="bg-[#FFE3E2] p-3 rounded-lg h-[80px]">
-              <i class="fa-regular fa-heart"></i>
+              <i class="fa-regular fa-heart heart_icon"></i>
             </div>
             <h1 class="text-[Hind Madurai] text-[1.25rem] font-bold mt-5">Anti-Corruption Helpline</h1>
             <p class="text-[Roboto] text-[1.25rem] text-[#9b9b9b]">Anti-Corruption</p>
@@ -192,8 +198,9 @@
 
 
         </div>
-        <!-- Third card -->
+        <!-- Third card Section -->
         <div class="grid md:grid-cols-3 grid-cols-1 gap-3 mt-20">
+          <!-- card 1 -->
           <div class="card rounded-lg shadow-lg p-3">
             <div class="flex justify-between items-center">
               <img src="./assets/emergency.png" alt="" class="bg-[#FFE3E2] p-3 rounded-lg h-[80px]">
@@ -213,10 +220,11 @@
                   class="fa-solid fa-phone text-[#fff]"></i>Call</button>
             </div>
           </div>
+          <!-- card 2 -->
           <div class="card rounded-lg shadow-lg p-3">
             <div class="flex justify-between items-center">
               <img src="./assets/brac.png" alt="" class="bg-[#41FF6B1A] p-3 rounded-lg h-[80px]">
-              <i class="fa-regular fa-heart"></i>
+              <i class="fa-regular fa-heart heart_icon"></i>
             </div>
             <h1 class="text-[Hind Madurai] text-[1.25rem] font-bold mt-5">Brac Helpline</h1>
             <p class="text-[Roboto] text-[1.25rem] text-[#9b9b9b]">Brac</p>
@@ -232,10 +240,11 @@
                   class="fa-solid fa-phone text-[#fff]"></i>Call</button>
             </div>
           </div>
+          <!-- card 3 -->
           <div class="card rounded-lg shadow-lg p-3">
             <div class="flex justify-between items-center">
               <img src="./assets/Bangladesh-Railway.png " alt="" class="bg-[#FFE3E2] p-3 rounded-lg h-[80px]">
-              <i class="fa-regular fa-heart"></i>
+              <i class="fa-regular fa-heart heart_icon"></i>
             </div>
             <h1 class="text-[Hind Madurai] text-[1.25rem] font-bold mt-5">Bangladesh Railway Helpline</h1>
             <p class="text-[Roboto] text-[1.25rem] text-[#9b9b9b]">Bangladesh Railway</p>
@@ -259,20 +268,15 @@
         <div class="flex justify-between items-center p-2">
           <div class="flex items-center">
             <i class="fa-regular fa-clock text-[#9b9b9b]"></i>
-            <h2 class="text-[Roboto] text-[1.25rem] font-semibold ml-2">Call Distory</h2>
+            <h2 class="text-[Roboto] text-[1.25rem] font-semibold ml-2">Call History</h2>
           </div>
           <div>
             <button class="h-[50px] w-[100px] rounded-full text-[1.25rem] bg-[#00A63E] text-white">Clear</button>
           </div>
         </div>
-        <div class="card_box bg-slate-300 mt-10 p-5">
-          <h2>Call</h2>
+        <div class="card_box bg-white mt-10 p-5">
           <div id="cart_container">
 
-          </div>
-          <div class="">
-            <h2>Total price<span>0</span> tk</h2>
-            <h2>Quantiry<span>0</span>tk</h2>
           </div>
         </div>
       </aside>
