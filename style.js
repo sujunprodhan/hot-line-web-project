@@ -1,10 +1,8 @@
-// call funcion 
+// js funtion element
 function getElement(id) {
   const element = document.getElementById(id);
   return element;
 }
-
-// js funtion element
 
 let copyCount = Number(getElement('copy_count').innerText)
 const coinBtn = getElement('coin_btn')
@@ -19,8 +17,6 @@ const heartBtn = getElement('heart_btn').innerText
 let countHeartButton = Number(heartBtn)
 
 // heart icon end here
-
-
 
 // call button praent
 
@@ -68,7 +64,6 @@ callBox.addEventListener('click', function (e) {
     return alert(`📞 Calling ${cardtitle}, ${callNumber}...`);
   }
 })
-
 
 // heart icon loop start here
 
